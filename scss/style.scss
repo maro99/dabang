@@ -1,0 +1,28 @@
+
+html,body{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+ul,li{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+
+}
+
+header.main-header{
+  ul.left{
+    li{
+      float:left;
+    }
+  }
+  ul.right{
+    float:right;
+
+    li{
+      float:left;
+      // ul아니라 최하위 리스트요소 li에 float:left줘야 원하는대로 된다.
+    }
+  }
+}
