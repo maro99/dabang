@@ -60,3 +60,8 @@ header.main-header .header-menu-list.auth-list {
   font-size: 12px;
   margin-left: 40px;
 }
+
+.background-searchbar {
+  height: 678px;
+  background-position: center center;
+}
