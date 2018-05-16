@@ -10,19 +10,27 @@ ul,li{
   list-style-type: none;
 
 }
+$height-main-header:61px;
+$bottom-border-color:#e7e7e7;
 
 header.main-header{
-  ul.left{
+  height:$height-main-header;
+  border-bottom: 1px solid $bottom-border-color;
+
+  ul.header-menu-list{
     li{
       float:left;
+      line-height:$height-main-header;
     }
+
+  }
+  ul.left{
+    float:left;
+    height:100%;
   }
   ul.right{
+    height:100%;
     float:right;
 
-    li{
-      float:left;
-      // ul아니라 최하위 리스트요소 li에 float:left줘야 원하는대로 된다.
-    }
   }
 }
