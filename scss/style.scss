@@ -29,6 +29,7 @@ header.main-header{
   height:$height-main-header;
   border-bottom: 1px solid $bottom-border-color;
 
+
   ul.header-menu-list{
     li{
       float:left;
@@ -38,27 +39,29 @@ header.main-header{
         margin-left: 20px;
       }
       a{
-        margin: 0px 17px 0px 17px;
-        padding: 0px 3px 0px 3px;
+        padding: 0 15px;
       }
-
-      
     }
   }
   ul.left{
     float:left;
     height:100%;
-
-    // line-height:$height-main-header;
   }
-  ul.right{
+  .right{
     height:100%;
     float:right;
-
-    // a{
-
-
-    //
-    // }
+  }
+  .header-menu-list{
+    float:left;
+    &.room-list{
+      font-size: 14px;
+    }
+    &.auth-list{
+      font-size:12px;
+      margin-left:40px;
+    }
   }
 }
+// 채인선택자는 요소(div)가 클래스를 A ,B 를 받고 있을때 하나의 그 요소만 특정하고 클래스 A 나 B 만 받는경우는 특정안하기위함이다.
+// 여기서는 스스로를 지칭하는 &연산자를 사용해서 header-menu-list 안에서 같은 단게에서 같은 요소를 가리키는
+// room-list 에대해서 서술하고 싶어서 이렇게 쓴것이다. 라이트
