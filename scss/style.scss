@@ -1,4 +1,7 @@
 
+$color-menu:#585858;
+$color-menu-hover:#58b5d3;
+
 html,body{
   margin:0;
   padding:0;
@@ -10,8 +13,17 @@ ul,li{
   list-style-type: none;
 
 }
+a{
+  color:$color-menu;
+  text-decoration: none;
+  &:hover{
+    color:$color-menu-hover;
+  }
+}
+
 $height-main-header:61px;
 $bottom-border-color:#e7e7e7;
+
 
 header.main-header{
   height:$height-main-header;
@@ -21,16 +33,32 @@ header.main-header{
     li{
       float:left;
       line-height:$height-main-header;
-    }
+      img{
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+      a{
+        margin: 0px 17px 0px 17px;
+        padding: 0px 3px 0px 3px;
+      }
 
+      
+    }
   }
   ul.left{
     float:left;
     height:100%;
+
+    // line-height:$height-main-header;
   }
   ul.right{
     height:100%;
     float:right;
 
+    // a{
+
+
+    //
+    // }
   }
 }

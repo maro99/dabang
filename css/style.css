@@ -10,6 +10,15 @@ ul, li {
   list-style-type: none;
 }
 
+a {
+  color: #585858;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #58b5d3;
+}
+
 header.main-header {
   height: 61px;
   border-bottom: 1px solid #e7e7e7;
@@ -18,6 +27,16 @@ header.main-header {
 header.main-header ul.header-menu-list li {
   float: left;
   line-height: 61px;
+}
+
+header.main-header ul.header-menu-list li img {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+header.main-header ul.header-menu-list li a {
+  margin: 0px 17px 0px 17px;
+  padding: 0px 3px 0px 3px;
 }
 
 header.main-header ul.left {
